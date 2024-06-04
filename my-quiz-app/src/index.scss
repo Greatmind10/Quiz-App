@@ -47,3 +47,52 @@ font-weight:400;
 margin:0;
 }
 
+ul{
+margin-top:20px;
+margin: left -40px;
+
+li{
+    text-decoration: none;
+    list-style:none;
+    color:$foreground;
+    font-size: 16px;
+    border:1px solid $disabled;
+    border-radius: 16px;
+    padding: 11px;
+    margin-top: 15px;
+    cursor:pointer;
+}
+.selected-answer{
+    background-color:green;
+    border:1px solid $accent;
+    color: $bg;
+}
+
+}
+
+.footer{
+    display:flex ;
+    justify-content: flex-end;
+
+    button{
+background:#003554;
+border-radius: 9px;
+font-size: 18px;
+color: $bg;
+padding: 10px 42px;
+outline: none;
+border:none;
+margin-top: 5px;
+cursor: pointer;
+
+
+&:disabled{
+    background-color: $bg-accent;
+    color:$disabled;
+    cursor: not-allowed;
+}
+
+    }
+    
+}
+
