@@ -48,4 +48,11 @@ export const jsQuizz = {
         correctAnswer: "JavaScript compiler",
       },
     ],
-  }; 
+  };  
+
+
+  export const resultInitialState={
+score:0,
+correctAnswers:0,
+wrongAnswers:0,
+  };
