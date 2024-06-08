@@ -1,117 +1,128 @@
-$primary:#150080;
- $accent:#d08642;
- $bg:#ffffff;
- $bg-accent:#e7e8e9;
- $disabled:#9c9c9c;
- $foreground: #2d264b;
+$primary: #150080;
+$accent: #d08642;
+$bg: #ffffff;
+$bg-accent: #e7e8e9;
+$disabled: #9c9c9c;
+$foreground: #2d264b;
 
- body{
-    font-family:monospace;
-    background: linear-gradient(0deg, $primary 0.03%, $accent );
-     color:$foreground;  
-     display:flex;
-     justify-content: center;
-     margin:0 auto;
-     padding:0 30px;
-     height:100vh;
-
- }
+body {
+  font-family: monospace;
+  background: linear-gradient(0deg, $primary 0.03%, $accent);
+  color: $foreground;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 30px;
+  height: 100vh;
+}
 
 .quiz-container {
-width:500px;
-background: $bg;
-border-radius: 5px;
-margin-top: 100px;
-padding: 30px 60px;
-box-sizing: border-box;
-  
+  width: 500px;
+  background: $bg;
+  border-radius: 5px;
+  margin-top: 100px;
+  padding: 30px 60px;
+  box-sizing: border-box;
+position: relative;
 }
 //you can as well nest this if you want, it is allowed in sass
-.active-question-no{
-
-font-size:32px;
-font-weight: 500;
-color:$primary
-     
-};
-
-.total-questions{
-font-size:16px;
-font-weight:500;
-color:$disabled;
-
-}
-h2{
-font-size:20px;
-font-weight:400;
-margin:0;
+.active-question-no {
+  font-size: 32px;
+  font-weight: 500;
+  color: $primary;
 }
 
-ul{
-margin-top:20px;
-margin: left -40px;
+.total-questions {
+  font-size: 16px;
+  font-weight: 500;
+  color: $disabled;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
 
-li{
+ul {
+  margin-top: 20px;
+  margin: left -40px;
+
+  li {
     text-decoration: none;
-    list-style:none;
-    color:$foreground;
+    list-style: none;
+    color: $foreground;
     font-size: 16px;
-    border:1px solid $disabled;
+    border: 1px solid $disabled;
     border-radius: 16px;
     padding: 11px;
     margin-top: 15px;
-    cursor:pointer;
-}
-.selected-answer{
-    background-color:green;
-    border:1px solid $accent;
+    cursor: pointer;
+  }
+  .selected-answer {
+    background-color: green;
+    border: 1px solid $accent;
     color: $bg;
+  }
 }
 
-}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+gap: 4rem;
+  button{
+    background: #003554;
+    border-radius: 9px;
+    font-size: 18px;
+    color: $bg;
+    padding: 10px 42px;
+    outline: none;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
 
-.footer{
-    display:flex ;
-    justify-content: flex-end;
-
-    button{
-background:#003554;
-border-radius: 9px;
-font-size: 18px;
-color: $bg;
-padding: 10px 42px;
-outline: none;
-border:none;
-margin-top: 5px;
-cursor: pointer;
-
-
-&:disabled{
-    background-color: $bg-accent;
-    color:$disabled;
-    cursor: not-allowed;
-}
-
+    &:disabled {
+      background-color: $bg-accent;
+      color: $disabled;
+      cursor: not-allowed;
     }
-    
+  }
 }
-.result{
-    text-align:center; 
+.result {
+  text-align: center;
 }
-h3{
-    font-size: 24px;
-    letter-spacing: 1.5px;
-    text-align:centre;
-
-}
-
-p{
-    font-size: 12px;
-    font-weight:500;
-    color:navy   
+h3 {
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  text-align: centre;
 }
 
-span{
-    color:$primary;
-    font-size: 22px;
+p {
+  font-size: 12px;
+  font-weight: 500;
+  color: navy;
+}
+
+span {
+  color: $primary;
+  font-size: 22px;
+}
+
+
+.prev-btn{
+  background: #003554;
+  border-radius: 9px;
+  font-size: 18px;
+  color: $bg;
+  padding: 10px 42px;
+  outline: none;
+  border: none;
+  margin-top: 5px;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: $bg-accent;
+    color: $disabled;
+    cursor: not-allowed;
+  }
+
 }
