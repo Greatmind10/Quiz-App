@@ -46,16 +46,13 @@ const Quiz = ({ questions }) => {
     setResult(resultInitialState);
     setShowResult(false);
   };
-const handleTimeUp= () =>{
-
-
-}
+  const handleTimeUp = () => {};
 
   return (
     <div className="quiz-container">
       {!showResult ? (
         <>
-<AnswerTimer duration={10} onTimeUp={handleTimeUp} />
+          <AnswerTimer duration={10} onTimeUp={handleTimeUp} />
 
           <span className="active-question-no">{currentquestion + 1}</span>
           <span className="total-questions">/{questions.length}</span>
@@ -71,14 +68,11 @@ const handleTimeUp= () =>{
               </li>
             ))}
           </ul>
-          <div className="footer">  
+          <div className="footer">
             <button onClick={onClickNext} disabled={answerIdz === null}>
               {currentquestion === questions.length - 1 ? "finish" : "Next"}
             </button>
-            
           </div>
-
-
         </>
       ) : (
         <div className="result">
